@@ -21,5 +21,6 @@ from backend_api.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', CityView.as_view(), name='city')
+    path('', CityView.as_view(), name='city'),
+    path('cars/', CarView.as_view(), name='car-list'),
 ]
