@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', CityView.as_view(), name='city'),
     path('cars/', CarView.as_view(), name='car-list'),
+    path('pers/', PersView.as_view(), name='pers-list'),
 ]
